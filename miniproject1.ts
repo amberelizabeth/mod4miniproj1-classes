@@ -21,6 +21,7 @@ class Student{
 class UnderGraduate extends Student implements Iundergrad{
     batch: number;
     gpa: number;
+
     constructor(name, age, nationality, batch, gpa){
         super(name, age, nationality);
         this.batch = batch;
@@ -30,8 +31,12 @@ class UnderGraduate extends Student implements Iundergrad{
 
 //Assignment STEP 7
 interface Iundergrad{
-    batch: number;
     gpa: number;
+    batch: number;
+    name: string;
+    age: number;
+    gender: string;
+    nationality: string;
 }
 
 //Assignment STEP 9 - create instance and log to console.
